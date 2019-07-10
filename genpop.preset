@@ -1,9 +1,9 @@
 ##########
 # Win 10 / Server 2016 / Server 2019 Initial Setup Script - Default preset
 # Author: Disassembler <disassembler@dasm.cz>
-# Version: development - custom 20190530
+# Version: v3.7, 2019-05-31
 # Source: https://github.com/Disassembler0/Win10-Initial-Setup-Script
-# Genpop Preset 20190530
+# Genpop Preset 20190710
 ##########
 
 ### Require administrator privileges ###
@@ -17,13 +17,16 @@ DisableWebSearch                # EnableWebSearch
 DisableAppSuggestions           # EnableAppSuggestions
 DisableActivityHistory          # EnableActivityHistory
 # DisableBackgroundApps         # EnableBackgroundApps
-# DisableLocationTracking       # EnableLocationTracking
-# DisableMapUpdates             # EnableMapUpdates
+# DisableSensors                # EnableSensors
+# DisableLocation               EnableLocation
+# DisableMapUpdates             EnableMapUpdates
 DisableFeedback                 # EnableFeedback
 DisableTailoredExperiences      # EnableTailoredExperiences
 DisableAdvertisingID            # EnableAdvertisingID
 # DisableWebLangList            # EnableWebLangList
 # DisableCortana                # EnableCortana
+# DisableBiometrics             # EnableBiometrics
+# DisableCamera                 # EnableCamera
 DisableErrorReporting           # EnableErrorReporting
 # SetP2PUpdateLocal             # SetP2PUpdateInternet          # SetP2PUpdateDisable
 DisableDiagTrack                # EnableDiagTrack
@@ -42,6 +45,7 @@ DisableWAPPush                  # EnableWAPPush
 # DisableNCSIProbe              # EnableNCSIProbe
 # SetCurrentNetworkPrivate      # SetCurrentNetworkPublic
 # SetUnknownNetworksPrivate     # SetUnknownNetworksPublic
+# DisableConnectionSharing      # EnableConnectionSharing
 # DisableNetDevicesAutoInst     # EnableNetDevicesAutoInst
 # DisableFirewall               # EnableFirewall
 # HideDefenderTrayIcon          # ShowDefenderTrayIcon
@@ -63,6 +67,7 @@ EnableDotNetStrongCrypto        # DisableDotNetStrongCrypto
 ### Service Tweaks ###
 # DisableUpdateMSRT             # EnableUpdateMSRT
 # DisableUpdateDriver           # EnableUpdateDriver
+EnableUpdateMSProducts          # DisableUpdateMSProducts
 # DisableUpdateAutoDownload     # EnableUpdateAutoDownload
 DisableUpdateRestart            # EnableUpdateRestart
 # DisableHomeGroups             # EnableHomeGroups
@@ -169,17 +174,19 @@ Hide3DObjectsFromExplorer     	# Show3DObjectsInExplorer
 # DisableThumbsDBOnNetwork      # EnableThumbsDBOnNetwork
 
 ### Application Tweaks ###
-# DisableOneDrive               # EnableOneDrive
-# UninstallOneDrive             # InstallOneDrive
+# DisableOneDrive               EnableOneDrive
+# UninstallOneDrive             InstallOneDrive
 # UninstallMsftBloat            # InstallMsftBloat
 # UninstallThirdPartyBloat      # InstallThirdPartyBloat
-# UninstallWindowsStore         # InstallWindowsStore
+# UninstallWindowsStore         InstallWindowsStore
 DisableXboxFeatures             # EnableXboxFeatures
+# DisableFullscreenOptims       # EnableFullscreenOptims
 DisableAdobeFlash               # EnableAdobeFlash
 DisableEdgePreload              # EnableEdgePreload
 DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
 DisableIEFirstRun               # EnableIEFirstRun
 DisableFirstLogonAnimation      # EnableFirstLogonAnimation
+DisableMediaSharing             # EnableMediaSharing
 # UninstallMediaPlayer          # InstallMediaPlayer
 # UninstallInternetExplorer     # InstallInternetExplorer
 # UninstallWorkFolders          # InstallWorkFolders
@@ -187,8 +194,8 @@ DisableFirstLogonAnimation      # EnableFirstLogonAnimation
 # InstallLinuxSubsystem         # UninstallLinuxSubsystem
 # InstallHyperV                 # UninstallHyperV
 # InstallNET23                  # UninstallNET23
-# SetPhotoViewerAssociation     # UnsetPhotoViewerAssociation
-# AddPhotoViewerOpenWith        # RemovePhotoViewerOpenWith
+SetPhotoViewerAssociation       # UnsetPhotoViewerAssociation
+AddPhotoViewerOpenWith          # RemovePhotoViewerOpenWith
 # UninstallPDFPrinter           # InstallPDFPrinter
 UninstallXPSPrinter             # InstallXPSPrinter
 RemoveFaxPrinter                # AddFaxPrinter
