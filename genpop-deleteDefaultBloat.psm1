@@ -2,7 +2,6 @@
 Function UninstallMsftBloat {
 	Write-Output "Uninstalling default Microsoft applications..."
 	Get-AppxPackage "Microsoft.3DBuilder" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.Advertising.Xaml" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.AppConnector" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingFinance" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingFoodAndDrink" | Remove-AppxPackage
@@ -27,7 +26,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.MicrosoftStickyNotes" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.MinecraftUWP" | Remove-AppxPackage
-	# Get-AppxPackage "Microsoft.MixedReality.Portal" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.MixedReality.Portal" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.MoCamera" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.MSPaint" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.NetworkSpeedTest" | Remove-AppxPackage
@@ -54,13 +53,13 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.WindowsReadingList" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsScan" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
-	# Get-AppxPackage "Microsoft.WebMediaExtensions" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.WinJS.1.0" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.WinJS.2.0" | Remove-AppxPackage
-    # Get-AppxPackage "Microsoft.YourPhone" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.YourPhone" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.ScreenSketch" | Remove-AppxPackage
+	Get-AppxPackage "Microsoft.Advertising.Xaml" | Remove-AppxPackage # Dependency for microsoft.windowscommunicationsapps, Microsoft.BingWeather
 }
 # In case you have removed them for good, you can try to restore the files using installation medium as follows
 # New-Item C:\Mnt -Type Directory | Out-Null
@@ -101,7 +100,7 @@ function UninstallThirdPartyBloat {
 	# Get-AppxPackage "E046963F.LenovoCompanion" | Remove-AppxPackage
 	# Get-AppxPackage "LenovoCorporation.LenovoID" | Remove-AppxPackage
 	# Get-AppxPackage "LenovoCorporation.LenovoSettings" | Remove-AppxPackage
-    Get-AppxPackage "Facebook.Facebook" | Remove-AppxPackage
+	Get-AppxPackage "Facebook.Facebook" | Remove-AppxPackage
 	Get-AppxPackage "Fitbit.FitbitCoach" | Remove-AppxPackage
 	Get-AppxPackage "flaregamesGmbH.RoyalRevolt2" | Remove-AppxPackage
 	Get-AppxPackage "GAMELOFTSA.Asphalt8Airborne" | Remove-AppxPackage
