@@ -3,7 +3,7 @@ Function UninstallMsftBloat {
 	Write-Output "Uninstalling default Microsoft applications..."
 	Get-AppxPackage "Microsoft.3DBuilder" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Advertising.Xaml" | Remove-AppxPackage
-    	# Get-AppxPackage "Microsoft.AppConnector" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.AppConnector" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingFinance" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingFoodAndDrink" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingHealthAndFitness" | Remove-AppxPackage
@@ -13,8 +13,8 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.BingTranslator" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingTravel" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingWeather" | Remove-AppxPackage
-   	# Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
-    	# Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.FreshPaint" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.GetHelp" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Getstarted" | Remove-AppxPackage
@@ -34,7 +34,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.OfficeLens" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Office.Sway" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.OneConnect" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.OneConnect" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Print3D" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Reader" | Remove-AppxPackage
@@ -53,10 +53,11 @@ Function UninstallMsftBloat {
 	# Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsReadingList" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsScan" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.WebMediaExtensions" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.WinJS.1.0" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.WinJS.2.0" | Remove-AppxPackage
-    	# Get-AppxPackage "Microsoft.YourPhone" | Remove-AppxPackage
+    # Get-AppxPackage "Microsoft.YourPhone" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
 	# Get-AppxPackage "Microsoft.ScreenSketch" | Remove-AppxPackage
@@ -98,7 +99,9 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "DolbyLaboratories.DolbyAccess" | Remove-AppxPackage
 	Get-AppxPackage "Drawboard.DrawboardPDF" | Remove-AppxPackage
 	# Get-AppxPackage "E046963F.LenovoCompanion" | Remove-AppxPackage
-	Get-AppxPackage "Facebook.Facebook" | Remove-AppxPackage
+	# Get-AppxPackage "LenovoCorporation.LenovoID" | Remove-AppxPackage
+	# Get-AppxPackage "LenovoCorporation.LenovoSettings" | Remove-AppxPackage
+    Get-AppxPackage "Facebook.Facebook" | Remove-AppxPackage
 	Get-AppxPackage "Fitbit.FitbitCoach" | Remove-AppxPackage
 	Get-AppxPackage "flaregamesGmbH.RoyalRevolt2" | Remove-AppxPackage
 	Get-AppxPackage "GAMELOFTSA.Asphalt8Airborne" | Remove-AppxPackage
@@ -107,8 +110,6 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "king.com.CandyCrushFriends" | Remove-AppxPackage
 	Get-AppxPackage "king.com.CandyCrushSaga" | Remove-AppxPackage
 	Get-AppxPackage "king.com.CandyCrushSodaSaga" | Remove-AppxPackage
-	# Get-AppxPackage "LenovoCorporation.LenovoID" | Remove-AppxPackage
-	# Get-AppxPackage "LenovoCorporation.LenovoSettings" | Remove-AppxPackage
 	Get-AppxPackage "Nordcurrent.CookingFever" | Remove-AppxPackage
 	Get-AppxPackage "PandoraMediaInc.29680B314EFC2" | Remove-AppxPackage
 	Get-AppxPackage "PricelinePartnerNetwork.Booking.comBigsavingsonhot" | Remove-AppxPackage
@@ -124,5 +125,4 @@ function UninstallThirdPartyBloat {
 	Get-AppxPackage "TuneIn.TuneInRadio"| Remove-AppxPackage
 	Get-AppxPackage "2FE3CB00.PicsArt-PhotoStudio" | Remove-AppxPackage
 	Get-AppxPackage "ClearChannelRadioDigital.iHeartRadio" | Remove-AppxPackage
-
 }
